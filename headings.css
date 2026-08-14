@@ -1,0 +1,30 @@
+/* Target all H1 tags */
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0b192c;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+/* Target all H2 tags */
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3e62;
+  margin-bottom: 12px;
+}
+
+/* Target all H3 tags */
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+/* You can also style h4, h5, h6 similarly */
+h4, h5, h6 {
+  color: #64748b;
+  margin-bottom: 8px;
+}

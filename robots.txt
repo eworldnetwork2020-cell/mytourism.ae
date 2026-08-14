@@ -1,0 +1,6 @@
+# Robots.txt for mytourism.ae
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://mytourism.ae/sitemap.xml
