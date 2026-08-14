@@ -1,5 +1,0 @@
-# Force www to apex (non-www) domain
-https://www.mytourism.ae/*  https://mytourism.ae/:splat  301!
-
-# Handle missing pages gracefully
-/*  /index.html  200
