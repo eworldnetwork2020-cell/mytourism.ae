@@ -9,16 +9,21 @@
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://mytourism.ae/" />
 
-<!-- Preload LCP Hero Image to eliminate Resource Load Delay -->
-<link rel="preload" href="images/hero.avif" as="image" type="image/avif" fetchpriority="high">
+<!-- Browser Cache-Control Meta Tags for GitHub Pages -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<!-- Preload LCP Hero Image with Cache Buster -->
+<link rel="preload" href="images/hero.avif?v=20260817" as="image" type="image/avif" fetchpriority="high">
 
 <!-- Preconnect to CDN to eliminate network latency -->
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 
-<!-- Favicon, Apple Touch Icon & PWA Web Manifest -->
-<link rel="icon" type="image/avif" href="images/logo.avif" />
-<link rel="apple-touch-icon" href="images/logo.avif" />
+<!-- Favicon, Apple Touch Icon & PWA Web Manifest with Cache Buster -->
+<link rel="icon" type="image/avif" href="images/logo.avif?v=20260817" />
+<link rel="apple-touch-icon" href="images/logo.avif?v=20260817" />
 <link rel="manifest" href="/site.webmanifest" />
 
 <!-- Open Graph / Social Sharing Meta Tags -->
@@ -545,7 +550,7 @@
 <header>
   <div class="nav container">
     <a href="#" class="brand" onclick="showMainView(); return false;">
-      <img src="images/logo.avif" alt="MY Tourism Logo" class="logo" fetchpriority="high">
+      <img src="images/logo.avif?v=20260817" alt="MY Tourism Logo" class="logo" fetchpriority="high">
       <div>
         <div style="font-weight: 800; font-size: 16px;">MY Tourism</div>
         <div style="font-size: 12px; color: #94a3b8;">Luxury Chauffeurs & Safari Tours — UAE</div>
@@ -598,7 +603,7 @@
 <!-- MAIN LANDING PAGE CONTENT CONTAINER -->
 <div id="main-content-view">
   <div class="hero-wrapper">
-    <img src="images/hero.avif" alt="Dubai Desert Safari & Chauffeur Services" class="hero-bg-img" fetchpriority="high" />
+    <img src="images/hero.avif?v=20260817" alt="Dubai Desert Safari & Chauffeur Services" class="hero-bg-img" fetchpriority="high" />
     <div class="hero-overlay"></div>
 
     <section class="hero container" id="home" aria-label="Hero">
@@ -659,7 +664,7 @@
       <div class="grid">
         <div class="card">
           <div>
-            <img loading="lazy" src="images/desert-safari-with-quad-bike.avif" alt="Desert Safari With Quad Bike Tour Dubai">
+            <img loading="lazy" src="images/desert-safari-with-quad-bike.avif?v=20260817" alt="Desert Safari With Quad Bike Tour Dubai">
             <div class="vehicle-name">Desert Safari With Quad Bike</div>
             <div class="badges"><div class="badge">VIP Adventure</div><div class="badge">Quad Bike Included</div></div>
             <div class="divider"></div>
@@ -674,7 +679,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/private-desert-safari-trip.avif" alt="Private Desert Safari Trip Dubai">
+            <img loading="lazy" src="images/private-desert-safari-trip.avif?v=20260817" alt="Private Desert Safari Trip Dubai">
             <div class="vehicle-name">Private Desert Safari Tour</div>
             <div class="badges"><div class="badge">Private 4x4</div><div class="badge">7 Seater</div></div>
             <div class="divider"></div>
@@ -689,7 +694,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/abu-dhabi-desert-safari.avif" alt="Abu Dhabi Desert Safari">
+            <img loading="lazy" src="images/abu-dhabi-desert-safari.avif?v=20260817" alt="Abu Dhabi Desert Safari">
             <div class="vehicle-name">Abu Dhabi Desert Safari</div>
             <div class="badges"><div class="badge">Capital Safari</div><div class="badge">Dune Bashing</div></div>
             <div class="divider"></div>
@@ -704,7 +709,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/desert-safari(shared).avif" alt="Shared Desert Safari BBQ Dinner Dubai">
+            <img loading="lazy" src="images/desert-safari(shared).avif?v=20260817" alt="Shared Desert Safari BBQ Dinner Dubai">
             <div class="vehicle-name">Evening Desert Safari Trip (Shared)</div>
             <div class="badges"><div class="badge">Shared Tour</div><div class="badge">Budget Friendly</div></div>
             <div class="divider"></div>
@@ -719,7 +724,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/morining-desert-safari.avif" alt="Morning Desert Safari Dubai">
+            <img loading="lazy" src="images/morining-desert-safari.avif?v=20260817" alt="Morning Desert Safari Dubai">
             <div class="vehicle-name">Morning Desert Safari</div>
             <div class="badges"><div class="badge">Morning Tour</div><div class="badge">Sunrise Adventure</div></div>
             <div class="divider"></div>
@@ -734,7 +739,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/Dune-Buggy-Safari.avif" alt="Dune Buggy Ride Dubai">
+            <img loading="lazy" src="images/Dune-Buggy-Safari.avif?v=20260817" alt="Dune Buggy Ride Dubai">
             <div class="vehicle-name">Dune Buggy Ride</div>
             <div class="badges"><div class="badge">Self-Drive</div><div class="badge">Off-Road Power</div></div>
             <div class="divider"></div>
@@ -759,7 +764,7 @@
       <div class="grid">
         <div class="card">
           <div>
-            <img loading="lazy" src="images/dubai-city-tour.avif" alt="Full Day Dubai City Tour">
+            <img loading="lazy" src="images/dubai-city-tour.avif?v=20260817" alt="Full Day Dubai City Tour">
             <div class="vehicle-name">Full Day Dubai City Tour</div>
             <div class="badges"><div class="badge">Private Tour</div><div class="badge">Custom Itinerary</div></div>
             <div class="divider"></div>
@@ -775,7 +780,7 @@
 
         <div class="card" id="abu-dhabi-tour">
           <div>
-            <img loading="lazy" src="images/abu-dhabi-city-tour.avif" alt="Full Day Abu Dhabi City Tour">
+            <img loading="lazy" src="images/abu-dhabi-city-tour.avif?v=20260817" alt="Full Day Abu Dhabi City Tour">
             <div class="vehicle-name">Full Day Abu Dhabi City Tour</div>
             <div class="badges"><div class="badge">Full Day Tour</div><div class="badge">Private Transfer</div></div>
             <div class="divider"></div>
@@ -791,7 +796,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/dubai-to-abu-dhabi-monthly-pick-and-drop-service.avif" alt="Dubai to Abu Dhabi Monthly Transfer">
+            <img loading="lazy" src="images/dubai-to-abu-dhabi-monthly-pick-and-drop-service.avif?v=20260817" alt="Dubai to Abu Dhabi Monthly Transfer">
             <div class="vehicle-name">Dubai to Abu Dhabi Monthly Transfer</div>
             <div class="badges"><div class="badge">Commute</div><div class="badge">Private / Sharing</div></div>
             <div class="divider"></div>
@@ -815,7 +820,7 @@
       <div class="grid">
         <div class="card">
           <div>
-            <img loading="lazy" src="images/lexus-300-black.avif" alt="Lexus 300H Black Luxury Chauffeur Sedan">
+            <img loading="lazy" src="images/lexus-300-black.avif?v=20260817" alt="Lexus 300H Black Luxury Chauffeur Sedan">
             <div class="vehicle-name">Lexus 300H — Black</div>
             <div class="badges"><div class="badge">Luxury Sedan</div><div class="badge">4 Seater</div></div>
             <div class="divider"></div>
@@ -831,7 +836,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/lexus-300-white.avif" alt="Lexus 300H White Chauffeur Service">
+            <img loading="lazy" src="images/lexus-300-white.avif?v=20260817" alt="Lexus 300H White Chauffeur Service">
             <div class="vehicle-name">Lexus 300H — White</div>
             <div class="badges"><div class="badge">Luxury Sedan</div><div class="badge">4 Seater</div></div>
             <div class="divider"></div>
@@ -847,7 +852,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/bmw-7-series.avif" alt="BMW 7 Series VIP Chauffeur Service Dubai">
+            <img loading="lazy" src="images/bmw-7-series.avif?v=20260817" alt="BMW 7 Series VIP Chauffeur Service Dubai">
             <div class="vehicle-name">BMW 7 Series</div>
             <div class="badges"><div class="badge">Executive Sedan</div><div class="badge">4 Seater</div></div>
             <div class="divider"></div>
@@ -863,7 +868,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/mercedes-s-class.avif" alt="Mercedes S-Class Luxury Chauffeur Dubai">
+            <img loading="lazy" src="images/mercedes-s-class.avif?v=20260817" alt="Mercedes S-Class Luxury Chauffeur Dubai">
             <div class="vehicle-name">Mercedes-Benz S-Class / C-Class</div>
             <div class="badges"><div class="badge">Luxury Sedan</div><div class="badge">4 Seater</div></div>
             <div class="divider"></div>
@@ -879,7 +884,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/gmc-yukon-xl-suv.avif" alt="GMC Yukon XL Luxury SUV Rental">
+            <img loading="lazy" src="images/gmc-yukon-xl-suv.avif?v=20260817" alt="GMC Yukon XL Luxury SUV Rental">
             <div class="vehicle-name">GMC Yukon XL SUV</div>
             <div class="badges"><div class="badge">Luxury SUV</div><div class="badge">7 Seater</div></div>
             <div class="divider"></div>
@@ -895,7 +900,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/mercedes-v-class-van.avif" alt="Mercedes V Class Van Chauffeur">
+            <img loading="lazy" src="images/mercedes-v-class-van.avif?v=20260817" alt="Mercedes V Class Van Chauffeur">
             <div class="vehicle-name">Mercedes V-Class Luxury Van</div>
             <div class="badges"><div class="badge">VIP VAN</div><div class="badge">7 Seater</div></div>
             <div class="divider"></div>
@@ -911,7 +916,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/hyundai-h1.avif" alt="Hyundai H1 Van Rental Dubai">
+            <img loading="lazy" src="images/hyundai-h1.avif?v=20260817" alt="Hyundai H1 Van Rental Dubai">
             <div class="vehicle-name">Hyundai H1 Van</div>
             <div class="badges"><div class="badge">Group Van</div><div class="badge">9 Seater</div></div>
             <div class="divider"></div>
@@ -927,7 +932,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/mercedes-sprinter.avif" alt="Mercedes Sprinter Executive Van Dubai">
+            <img loading="lazy" src="images/mercedes-sprinter.avif?v=20260817" alt="Mercedes Sprinter Executive Van Dubai">
             <div class="vehicle-name">Mercedes Sprinter</div>
             <div class="badges"><div class="badge">Executive</div><div class="badge">16 Seater</div></div>
             <div class="divider"></div>
@@ -943,7 +948,7 @@
 
         <div class="card" id="yutong-bus">
           <div>
-            <img loading="lazy" src="images/yutong-bus.avif" alt="Yutong Bus 35 Seater Dubai">
+            <img loading="lazy" src="images/yutong-bus.avif?v=20260817" alt="Yutong Bus 35 Seater Dubai">
             <div class="vehicle-name">Yutong Bus — 35 Seater</div>
             <div class="badges"><div class="badge">Luxury Bus</div><div class="badge">35 Seater</div></div>
             <div class="divider"></div>
@@ -959,7 +964,7 @@
 
         <div class="card" id="king-long-bus">
           <div>
-            <img loading="lazy" src="images/king-long.avif" alt="King Long 50 Seater Luxury Bus Dubai">
+            <img loading="lazy" src="images/king-long.avif?v=20260817" alt="King Long 50 Seater Luxury Bus Dubai">
             <div class="vehicle-name">King Long — 50 Seater</div>
             <div class="badges"><div class="badge">Luxury Bus</div><div class="badge">50 Seater</div></div>
             <div class="divider"></div>
@@ -975,7 +980,7 @@
 
         <div class="card">
           <div>
-            <img loading="lazy" src="images/toyota-coaster.avif" alt="Toyota Coaster 22 Seater Bus Rental">
+            <img loading="lazy" src="images/toyota-coaster.avif?v=20260817" alt="Toyota Coaster 22 Seater Bus Rental">
             <div class="vehicle-name">Toyota Coaster — 22 Seater</div>
             <div class="badges"><div class="badge">Economy Bus</div><div class="badge">22 Seater</div></div>
             <div class="divider"></div>
@@ -991,7 +996,7 @@
 
         <div class="card" id="airport-transfer">
           <div>
-            <img loading="lazy" src="images/airport-transfer.avif" alt="Airport Transfer Service Dubai">
+            <img loading="lazy" src="images/airport-transfer.avif?v=20260817" alt="Airport Transfer Service Dubai">
             <div class="vehicle-name">24/7 Airport Transfer Service</div>
             <div class="badges"><div class="badge">Meet & Greet</div><div class="badge">All Fleet</div></div>
             <div class="divider"></div>
@@ -1073,7 +1078,7 @@
   <div class="footer-container">
     <div class="footer-col">
       <div class="footer-brand-logo">
-        <img src="images/logo.avif" alt="MY Tourism Logo" class="footer-logo-box">
+        <img src="images/logo.avif?v=20260817" alt="MY Tourism Logo" class="footer-logo-box">
         <div style="font-weight: 800; font-size: 16px; color: #fff;">MY Tourism</div>
       </div>
       <div class="footer-contact-info">
@@ -1129,7 +1134,7 @@
 </footer>
 
 <a href="https://wa.me/971561402248" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <img src="images/whatsapp.avif" alt="WhatsApp" class="whatsapp-icon">
+  <img src="images/whatsapp.avif?v=20260817" alt="WhatsApp" class="whatsapp-icon">
 </a>
 
 <script>
@@ -1187,7 +1192,7 @@
     "safari-quad": {
       title: "Desert Safari With Quad Bike",
       price: "AED 299 / Person",
-      image: "images/desert-safari-with-quad-bike.avif",
+      image: "images/desert-safari-with-quad-bike.avif?v=20260817",
       badges: ["VIP Adventure", "Quad Bike Included"],
       description: "Enjoy the thrill of riding through the majestic red dunes of Dubai. This package combines our classic high-octane 4x4 dune bashing with an independent quad bike ride experience, sandboarding across golden ridges, camel rides, traditional henna painting, and an unforgettable live Tanoura and belly dance show paired with a 5-star international BBQ buffet dinner. Pick & Drop Time Around 2:30PM To 9:30PM Depending On Location With VIP Seating (Optional).",
       features: ["4x4 Red Dune Bashing", "20 minutes Independent Quad Bike Ride", "Sandboarding & Camel Riding", "BBQ Buffet Dinner (Veg & Non-Veg)", "Live Tanoura & Fire Shows", "Hotel Pickup & Drop-off (Sharing)"],
@@ -1196,7 +1201,7 @@
     "safari-private": {
       title: "Private Desert Safari Tour",
       price: "AED 999 Upto 6 Persons",
-      image: "images/private-desert-safari-trip.avif",
+      image: "images/private-desert-safari-trip.avif?v=20260817",
       badges: ["Private 4x4", "7 Seater"],
       description: "Experience absolute exclusivity with our Private Desert Safari in Dubai. A dedicated Land Cruiser/Nissan Patrol with a professional desert safari driver will pick you up directly from your doorstep. Enjoy personalized dune driving, private camel interactions, VIP Camp Seating (Optional), and a luxury dining experience customized entirely for your family or group. Pick & Drop Time Around 2:30PM To 9:30PM Depending On Location.",
       features: ["Exclusive Private 4x4 SUV", "Personalized Dune Driving", "Arabic Cushions Sitting", "Private Camel Rides", "International BBQ Buffet", "Direct Doorstep Pick & Drop"],
@@ -1205,7 +1210,7 @@
     "safari-abudhabi": {
       title: "Abu Dhabi Desert Safari",
       price: "AED 150 / Person",
-      image: "images/abu-dhabi-desert-safari.avif",
+      image: "images/abu-dhabi-desert-safari.avif?v=20260817",
       badges: ["Capital Safari", "Dune Bashing"],
       description: "Explore the stunning desert landscapes of the UAE capital with our authentic Abu Dhabi Desert Safari. Enjoy exhilarating 4x4 dune bashing in the famous desert region, sandboarding down pristine dunes, camel rides, Arabic coffee & dates welcome, traditional henna design, and live cultural entertainment accompanied by a mouth-watering BBQ dinner buffet under the stars. Quad Bike & VIP Sitting (Optional) With Pick & Drop Time Around 2:30PM To 9:30PM Depending On Location.",
       features: ["4x4 Dune Bashing", "Camel Riding & Sandboarding", "Arabic Welcome Coffee & Dates", "Henna Painting & Costume Photos", "Belly Dance & Tanoura Shows", "Live BBQ Buffet Dinner"],
@@ -1214,7 +1219,7 @@
     "safari-shared": {
       title: "Evening Desert Safari Trip (Shared)",
       price: "AED 99 / Person",
-      image: "images/desert-safari(shared).avif",
+      image: "images/desert-safari(shared).avif?v=20260817",
       badges: ["Shared Tour", "Budget Friendly"],
       description: "Our popular shared desert safari offers an incredible value-packed adventure across the Dubai desert. Take part in exhilarating dune driving, capture sunset photos on sand dunes, enjoy a short camel ride, and experience a lively Bedouin-style desert camp complete with entertainment shows and a delicious BBQ dinner. Quad Bike & VIP Seating in Camp (Optional) With Estimated Pickup Time 2-3PM & Drop Off 9:30-10PM.",
       features: ["Shared 4x4 Dune Driving", "Camel Riding Experience", "Sandboarding & Photoshoot", "Henna Tattoo Painting", "Tanoura & Belly Dance Shows", "Open BBQ Buffet Dinner"],
@@ -1223,7 +1228,7 @@
     "safari-morning": {
       title: "Morning Desert Safari",
       price: "AED 700 Upto 6 Persons",
-      image: "images/morining-desert-safari.avif",
+      image: "images/morining-desert-safari.avif?v=20260817",
       badges: ["Morning Tour", "Sunrise Adventure"],
       description: "Experience the tranquil beauty of the Arabian desert at dawn. Enjoy sunrise dune bashing, sandboarding down pristine golden dunes, a gentle camel ride, and light refreshments in the cooler morning desert climate.",
       features: ["Sunrise Dune Bashing in 4x4", "Sandboarding Experience", "Camel Ride", "Light Refreshments & Water", "Private Hotel Pickup & Drop-off"],
@@ -1232,7 +1237,7 @@
     "buggy-ride": {
       title: "Dune Buggy Ride",
       price: "AED 999 / 2 Seater Buggy",
-      image: "images/Dune-Buggy-Safari.avif",
+      image: "images/Dune-Buggy-Safari.avif?v=20260817",
       badges: ["Self-Drive", "Off-Road Power"],
       description: "Take control of a powerful off-road dune buggy and navigate across the high red dunes of Dubai. Guided by professional safety instructors, this exhilarating ride includes full safety gear, sandboarding, and hotel transfers.",
       features: ["30 Minutes Self-Drive Dune Buggy Ride", "Off-Road Safety Equipment & Helmet", "Guided Dune Tour", "Sandboarding Included", "Hotel Pickup & Drop-off Options", "Short Camel Ride & Water Included"],
@@ -1241,7 +1246,7 @@
     "tour-dubai": {
       title: "Full Day Dubai City Tour",
       price: "AED 600 (10 Hours) | AED 350 (5 Hours)",
-      image: "images/dubai-city-tour.avif",
+      image: "images/dubai-city-tour.avif?v=20260817",
       badges: ["Private Tour", "Custom Itinerary"],
       description: "Discover the breathtaking contrasts of old and modern Dubai with our private city tour. Travel in air-conditioned luxury with your own professional chauffeur as you explore iconic landmarks including Burj Khalifa, Dubai Mall, Atlantis The Palm, Dubai Frame, the historic Gold & Spice Souks, and scenic Dubai Marina.",
       features: ["Burj Khalifa & Dubai Mall Photo Stop", "Atlantis The Palm & Marina Views", "Dubai Frame & Museum Visit", "Gold & Spice Souks Exploration", "Professional Chauffeur & Clean Vehicle", "Customized Sightseeing Itinerary"],
@@ -1250,7 +1255,7 @@
     "tour-abudhabi": {
       title: "Full Day Abu Dhabi City Tour",
       price: "AED 700 / 10 Hours",
-      image: "images/abu-dhabi-city-tour.avif",
+      image: "images/abu-dhabi-city-tour.avif?v=20260817",
       badges: ["Full Day Tour", "Private Transfer"],
       description: "Explore the majestic capital of the UAE with our full-day private tour from Dubai. Visit the world-famous Sheikh Zayed Grand Mosque, take a scenic drive along the Abu Dhabi Corniche, stop by the luxurious Emirates Palace, view the Louvre Museum, and catch views of Ferrari World on Yas Island.",
       features: ["Sheikh Zayed Grand Mosque Visit", "Emirates Palace Photo Stop", "Heritage Village Cultural Tour", "Louvre Museum Exterior View", "Ferrari World Yas Island Stop", "Private Chauffeur & Fuel Included"],
@@ -1259,7 +1264,7 @@
     "monthly-transfer": {
       title: "Dubai to Abu Dhabi Monthly Transfer",
       price: "Private: AED 6500 | Sharing: AED 3500",
-      image: "images/dubai-to-abu-dhabi-monthly-pick-and-drop-service.avif",
+      image: "images/dubai-to-abu-dhabi-monthly-pick-and-drop-service.avif?v=20260817",
       badges: ["Commute", "Private / Sharing"],
       description: "Looking for a reliable, stress-free daily commute between Dubai and Abu Dhabi? MY Tourism offers dedicated monthly pick-and-drop transportation services for professionals and corporate teams. Enjoy punctual pickups every morning and evening with petrol and Salik fully covered.",
       features: ["Daily Morning & Evening Commute", "Punctual & Experienced Driver", "Petrol, Tolls & Salik Included", "Comfortable Seating Options", "Flexible Scheduling", "Private & Shared Plans Available"],
@@ -1268,7 +1273,7 @@
     "lexus-black": {
       title: "Lexus 300H — Black",
       price: "AED 600 / 10 Hours | AED 350 / 5 Hours",
-      image: "images/lexus-300-black.avif",
+      image: "images/lexus-300-black.avif?v=20260817",
       badges: ["Luxury Sedan", "4 Seater"],
       description: "Travel in sleek style with our black Lexus 300H luxury hybrid sedan. Ideal for executive business meetings, VIP airport transfers, and private city travel across Dubai. Maintained to pristine standards with an expert chauffeur at your service.",
       features: ["Comprehensive Insurance", "Full Petrol & Salik Tolls Covered", "Complimentary In-Car Wi-Fi", "Bottled Mineral Water Provided", "Professional English Speaking Chauffeur", "Immaculately Clean Interior"],
@@ -1277,7 +1282,7 @@
     "lexus-white": {
       title: "Lexus 300H — White",
       price: "AED 600 / 10 Hours | AED 350 / 5 Hours",
-      image: "images/lexus-300-white.avif",
+      image: "images/lexus-300-white.avif?v=20260817",
       badges: ["Luxury Sedan", "4 Seater"],
       description: "Our pristine white Lexus 300H offers elegance, quiet comfort, and reliable executive transport. Perfect for weddings, VIP guest transfers, corporate itineraries, and comfortable city rides.",
       features: ["Comprehensive Insurance", "Full Petrol & Salik Tolls Covered", "Complimentary In-Car Wi-Fi", "Bottled Mineral Water Provided", "Professional English Speaking Chauffeur", "Immaculately Clean Interior"],
@@ -1286,7 +1291,7 @@
     "bmw-7": {
       title: "BMW 7 Series",
       price: "AED 1200 / 10 Hours | AED 800 / 5 Hours",
-      image: "images/bmw-7-series.avif",
+      image: "images/bmw-7-series.avif?v=20260817",
       badges: ["Executive Sedan", "4 Seater"],
       description: "Experience ultimate German engineering and first-class cabin luxury with the flagship BMW 7 Series. Designed for VIP dignitaries, high-profile corporate clients, and luxury city tours.",
       features: ["Flagship VIP Luxury Transport", "Comprehensive Insurance & Petrol", "Salik Toll Gates & Parking Covered", "High-Speed Onboard Wi-Fi", "Luxury Leather Reclining Seats", "Complimentary Mineral Water"],
@@ -1295,7 +1300,7 @@
     "mercedes-s": {
       title: "Mercedes-Benz S-Class / C-Class",
       price: "AED 1800 / 10 Hours | AED 1200 / 5 Hours",
-      image: "images/mercedes-s-class.avif",
+      image: "images/mercedes-s-class.avif?v=20260817",
       badges: ["Luxury Sedan", "4 Seater"],
       description: "The gold standard of luxury sedans. The Mercedes S-Class provides unmatched comfort, state-of-the-art safety features, and a prestigious presence for your most important events and airport transfers.",
       features: ["Elite German Luxury Engineering", "Comprehensive Insurance & Petrol", "Salik Toll Gates & Parking Covered", "High-Speed Onboard Wi-Fi", "VIP Meet & Greet Included", "Bottled Water & Refreshments"],
@@ -1304,7 +1309,7 @@
     "gmc-yukon": {
       title: "GMC Yukon XL SUV",
       price: "AED 1200 / 10 Hours | AED 700 / 5 Hours",
-      image: "images/gmc-yukon-xl-suv.avif",
+      image: "images/gmc-yukon-xl-suv.avif?v=20260817",
       badges: ["Luxury SUV", "7 Seater"],
       description: "Spacious, powerful, and commanding on the road. The GMC Yukon XL offers ample legroom and luggage capacity, making it the ideal choice for family tours, group airport pickups, and comfortable inter-emirates travel.",
       features: ["Spacious 7-Seater Luxury SUV", "Extensive Luggage Capacity", "Comprehensive Insurance & Petrol", "Salik Toll Gates & Parking Covered", "Complimentary Onboard Wi-Fi", "Professional Chauffeur"],
@@ -1313,7 +1318,7 @@
     "mercedes-v": {
       title: "Mercedes V-Class Luxury Van",
       price: "AED 1200 / 10 Hours | AED 700 / 5 Hours",
-      image: "images/mercedes-v-class-van.avif",
+      image: "images/mercedes-v-class-van.avif?v=20260817",
       badges: ["VIP VAN", "7 Seater"],
       description: "The Mercedes V-Class is the ultimate VIP van for families and corporate groups looking for conference seating, privacy, and exceptional ride comfort across the UAE.",
       features: ["Conference-Style Seating", "Comprehensive Insurance & Petrol", "Salik Toll Gates & Parking Covered", "Complimentary In-Car Wi-Fi", "Bottled Mineral Water", "Experienced Professional Driver"],
@@ -1322,7 +1327,7 @@
     "hyundai-h1": {
       title: "Hyundai H1 Van",
       price: "AED 700 / 10 Hours | AED 400 / 5 Hours",
-      image: "images/hyundai-h1.avif",
+      image: "images/hyundai-h1.avif?v=20260817",
       badges: ["Group Van", "9 Seater"],
       description: "An efficient and reliable 9-seater van ideal for crew transfers, airport luggage hauling, and group city sightseeing tours at an economical rate.",
       features: ["9 Comfortable Passenger Seats", "Comprehensive Insurance & Petrol", "Salik Toll Gates & Parking Covered", "Onboard Wi-Fi & AC", "Bottled Water Included", "Professional Driver"],
@@ -1331,7 +1336,7 @@
     "mercedes-sprinter": {
       title: "Mercedes Sprinter",
       price: "AED 1600 / 10 Hours | AED 1200 / 5 Hours",
-      image: "images/mercedes-sprinter.avif",
+      image: "images/mercedes-sprinter.avif?v=20260817",
       badges: ["Executive", "16 Seater"],
       description: "A premium executive van engineered for larger corporate delegations, tourism groups, and high-end hotel transfers needing spacious head and legroom.",
       features: ["16 Executive Passenger Seats", "Comprehensive Insurance & Petrol", "Salik Toll Gates & Parking Covered", "High-Speed Wi-Fi", "Bottled Water", "Experienced Professional Chauffeur"],
@@ -1340,7 +1345,7 @@
     "yutong-bus-card": {
       title: "Yutong Bus — 35 Seater",
       price: "AED 1200 / 10 Hours | AED 700 / 5 Hours",
-      image: "images/yutong-bus.avif",
+      image: "images/yutong-bus.avif?v=20260817",
       badges: ["Luxury Bus", "35 Seater"],
       description: "Modern 35-seater luxury coach designed for group tours, staff transportation, and large-scale event transfers across Dubai and the UAE.",
       features: ["35 Air-Conditioned Coach Seats", "Comprehensive Insurance & Petrol", "Salik Toll Gates", "Professional Licensed Bus Driver"],
@@ -1349,7 +1354,7 @@
     "king-long-card": {
       title: "King Long — 50 Seater",
       price: "AED 1500 / 10 Hours | AED 900 / 5 Hours",
-      image: "images/king-long.avif",
+      image: "images/king-long.avif?v=20260817",
       badges: ["Luxury Bus", "50 Seater"],
       description: "High-capacity 50-seater luxury bus built for large tour groups, corporate outings, and comprehensive event logistics across the UAE.",
       features: ["50 Comfortable Coach Seats", "Comprehensive Insurance & Petrol", "Salik Toll Gates", "Professional Bus Driver"],
@@ -1358,7 +1363,7 @@
     "toyota-coaster": {
       title: "Toyota Coaster — 22 Seater",
       price: "AED 1200 / 10 Hours | AED 700 / 5 Hours",
-      image: "images/toyota-coaster.avif",
+      image: "images/toyota-coaster.avif?v=20260817",
       badges: ["Economy Bus", "22 Seater"],
       description: "The reliable workhorse for medium group transportation. The Toyota Coaster 22-seater provides dependable, air-conditioned comfort for group outings and airport transfers.",
       features: ["22 Passenger Capacity", "Comprehensive Insurance & Petrol", "Salik Toll Gates", "Air Conditioned", "Professional Driver"],
@@ -1367,7 +1372,7 @@
     "airport-service": {
       title: "24/7 Airport Transfer Service",
       price: "Call For Inquiry",
-      image: "images/airport-transfer.avif",
+      image: "images/airport-transfer.avif?v=20260817",
       badges: ["Meet & Greet", "All Fleet"],
       description: "Never worry about flight delays or airport queues. Our 24/7 airport transfer service features flight tracking, professional meet-and-greet with name boards inside the arrivals hall, and seamless drop-offs across Dubai, Abu Dhabi, and Sharjah airports.",
       features: ["24/7 Flight Monitoring", "Meet & Greet Inside Terminal", "Free Waiting Time for Delays", "Luggage Assistance", "Available Across DXB & DWC", "Entire Luxury Fleet Eligible"],
