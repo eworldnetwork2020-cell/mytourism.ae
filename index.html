@@ -182,7 +182,7 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
           "itemOffered": {
             "@type": "Service",
             "name": "Full Day Abu Dhabi City Tour",
-            "description": "Grand Mosque, Heritage Village, Emirates Palace, Louvre Museum photo stop, and Ferrari World view."
+            "description": "Grand Mosque, Heritage Village, Emirates Palace photo stop, Louvre Museum photo stop, and Ferrari World view."
           },
           "price": "700",
           "priceCurrency": "AED"
@@ -517,7 +517,7 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
   .footer-map-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px; }
   .footer-map-box iframe { width: 100%; height: 130px; border: 0; border-radius: 6px; }
   
-  .footer-bottom { max-width: var(--maxw); margin: 40px auto 0 auto; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-space-between; align-items: center; font-size: 13px; color: #64748b; }
+  .footer-bottom { max-width: var(--maxw); margin: 40px auto 0 auto; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #64748b; }
   .footer-bottom-links { display: flex; gap: 24px; }
   .footer-bottom-links a { color: #64748b; text-decoration: none; transition: color 0.2s; }
   .footer-bottom-links a:hover { color: #fff; }
@@ -558,6 +558,7 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
         <li><a href="#desert-safari" onclick="showMainView()">Desert Safari</a></li>
         <li><a href="#city-tours" onclick="showMainView()">City Tours</a></li>
         <li><a href="#fleet" onclick="showMainView()">Luxury Fleet</a></li>
+        <li><a href="#water-adventures" onclick="showMainView()">Water Adventures</a></li>
         <li><a href="#faq" onclick="showMainView()">FAQ</a></li>
         <li><a href="https://wa.me/971561402248" target="_blank" rel="noopener" class="cta">Contact</a></li>
       </ul>
@@ -639,6 +640,9 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
             <option>BMW 7 Series</option>
             <option>Luxury SUV / GMC Yukon</option>
             <option>Luxury Van / Coach</option>
+            <option>Private Yacht Tour</option>
+            <option>Jet Car Experience</option>
+            <option>Jet Ski Experience</option>
           </select>
           
           <div style="display: flex; gap: 8px; margin-top: 12px;">
@@ -796,7 +800,7 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
             <div class="vehicle-name">Dubai to Abu Dhabi Monthly Transfer</div>
             <div class="badges"><div class="badge">Commute</div><div class="badge">Private / Sharing</div></div>
             <div class="divider"></div>
-            <div class="meta-row"><div class="loc">📍 Inter-Emirates</div><div class="price"><small>Private: AED 6500</small>Sharing: AED 3500</div></div>
+            <div class="meta-row"><div class="loc">📍 Inter-Emirates</div><div class="price"><small>Private: AED 6500</small>Sharing: AED 3000</div></div>
             <div class="includes">Daily executive pick and drop service for working professionals between Dubai and Abu Dhabi. Fuel & Salik included.</div>
           </div>
           <div class="card-actions">
@@ -990,6 +994,51 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
           </div>
         </div>
 
+        <div class="card">
+          <div>
+            <img loading="lazy" src="images/toyota-high-roof-van.avif" alt="Toyota High Roof Van" width="400" height="250">
+            <div class="vehicle-name">Toyota High Roof Van</div>
+            <div class="badges"><div class="badge">14 Seater</div><div class="badge">Economy Van</div></div>
+            <div class="divider"></div>
+            <div class="meta-row"><div class="loc">📍 Dubai</div><div class="price"><small>AED 750 / 10 Hours</small>AED 450 / 5 Hours</div></div>
+            <div class="includes">Including: Insurance, Petrol, Salik, Parking, Internet, Water Bottle</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn detail-btn" onclick="openServiceDetail('airport-option-2')">View Details</button>
+            <button class="action-btn" onclick="openWhats('Toyota High Roof Van')">WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img loading="lazy" src="images/fortuner.avif" alt="Toyota Fortuner SUV" width="400" height="250">
+            <div class="vehicle-name">Toyota Fortuner</div>
+            <div class="badges"><div class="badge">7 Seater</div><div class="badge">SUV</div></div>
+            <div class="divider"></div>
+            <div class="meta-row"><div class="loc">📍 Dubai</div><div class="price"><small>AED 700 / 10 Hours</small>AED 400 / 5 Hours</div></div>
+            <div class="includes">Including: Insurance, Petrol, Salik, Parking, Internet, Water Bottle</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn detail-btn" onclick="openServiceDetail('airport-option-1')">View Details</button>
+            <button class="action-btn" onclick="openWhats('Toyota Fortuner')">WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img loading="lazy" src="images/gmc-yukon-malala-edition.avif" alt="GMC Yukon Malala Edition" width="400" height="250">
+            <div class="vehicle-name">GMC Yukon Malala Edition</div>
+            <div class="badges"><div class="badge">20 Seater</div><div class="badge">Private</div></div> 
+            <div class="divider"></div>
+            <div class="meta-row"><div class="loc">📍 Dubai</div><div class="price"><small>AED 800 / Hour</small></div></div>
+            <div class="includes">Including: Insurance, Petrol, Salik, Parking, Internet, Water Bottle</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn detail-btn" onclick="openServiceDetail('GMC Yukon Malala Edition')">View Details</button>
+            <button class="action-btn" onclick="openWhats('GMC Yukon Malala Edition')">WhatsApp</button>
+          </div>
+        </div>
+
         <div class="card" id="airport-transfer">
           <div>
             <img loading="lazy" src="images/airport-transfer.avif?v=20260817" alt="Airport Transfer Service Dubai" width="400" height="250">
@@ -1002,6 +1051,60 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('airport-service')">View Details</button>
             <button class="action-btn" onclick="openWhats('Airport Transfer Service')">WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="water-adventures">
+      <div class="section-header">
+        <h2 class="section-title">Water Adventures</h2>
+        <p class="section-desc">Experience thrilling aquatic activities and water sports across Dubai's coastlines.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div>
+            <img loading="lazy" src="images/private-yacht.avif" alt="Luxury Yacht" width="400" height="250">
+            <div class="vehicle-name">Private Yacht Tour</div>
+            <div class="badges"><div class="badge">Luxury Private Yacht</div><div class="badge">1 Hour</div></div>
+            <div class="divider"></div>
+            <div class="meta-row"><div class="loc">📍 Dubai Marina</div><div class="price"><small> AED 350 / Hour</small></div></div>
+            <div class="includes">Ride across Dubai Marina on top-tier Yacht with Chauffeur.</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn detail-btn" onclick="openServiceDetail('Private Yacht Tour')">View Details</button>
+            <button class="action-btn" onclick="openWhats('Private Yacht Tour')">WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img loading="lazy" src="images/jet-car.avif" alt="Jet Car Experience" width="400" height="250">
+            <div class="vehicle-name">Jet Car Experience</div>
+            <div class="badges"><div class="badge">Water Adventure</div><div class="badge">VIP Jet Car</div></div>
+            <div class="divider"></div>
+            <div class="meta-row"><div class="loc">📍 Jumeirah Bay</div><div class="price"><small>AED 600 / 20 Mins</small></div></div>
+            <div class="includes">Private luxury yacht rental with captain and crew for celebrations, family trips, and coastal sightseeing.</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn detail-btn" onclick="openServiceDetail('Jet Car Experiance')">View Details</button>
+            <button class="action-btn" onclick="openWhats('Jet Car Experience')">WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img loading="lazy" src="images/jet-ski.avif?v=20260817" alt="Jet Ski Experience" width="400" height="250">
+            <div class="vehicle-name">Jet Ski Experience</div>
+            <div class="badges"><div class="badge">Water Adventure</div><div class="badge">2 Seater</div></div>
+            <div class="divider"></div>
+            <div class="meta-row"><div class="loc">📍 Jumeirah Bay</div><div class="price"><small>AED 250 / 20 Mins</small></div></div>
+            <div class="includes">High-speed Jet Ski ride across Jumeirah waters with views of Burj Al Arab & Dubai skyline.</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn detail-btn" onclick="openServiceDetail('water-adventure-3')">View Details</button>
+            <button class="action-btn" onclick="openWhats('Jet Ski Experience')">WhatsApp</button>
           </div>
         </div>
       </div>
@@ -1092,6 +1195,7 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
         <li><a href="#desert-safari" onclick="showMainView()">&gt; Desert Safari</a></li>
         <li><a href="#city-tours" onclick="showMainView(); scrollToCard('abu-dhabi-tour');">&gt; Full Day Abu Dhabi Tour</a></li>
         <li><a href="#fleet" onclick="showMainView()">&gt; Cars & Fleet</a></li>
+        <li><a href="#water-adventures" onclick="showMainView()">&gt; Water Adventures</a></li>
         <li><a href="#faq" onclick="showMainView()">&gt; FAQ</a></li>
         <li><a href="write-for-us.html" target="_blank" rel="noopener">&gt; Write for Us</a></li>
         <li><a href="https://wa.me/971561402248" target="_blank" rel="noopener">&gt; Contact Us</a></li>
@@ -1106,6 +1210,7 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
         <li><a href="#fleet" onclick="showMainView(); scrollToCard('airport-transfer');">&gt; Airport Chauffeur Transfers</a></li>
         <li><a href="#fleet" onclick="showMainView()">&gt; Executive BMW & Mercedes Rides</a></li>
         <li><a href="#fleet" onclick="showMainView(); scrollToCard('yutong-bus');">&gt; Group Vans & Bus Rentals</a></li>
+        <li><a href="#water-adventures" onclick="showMainView()">&gt; Luxury Yachts & Jet Ski</a></li>
       </ul>
     </div>
 
@@ -1181,6 +1286,12 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
     if (cardElement) {
       cardElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
+  }
+
+  function showMainView() {
+    document.getElementById('service-detail-view').style.display = 'none';
+    document.getElementById('main-content-view').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   /* --- SERVICE DETAIL DATABASE & SWITCHER LOGIC --- */
@@ -1259,7 +1370,7 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
     },
     "monthly-transfer": {
       title: "Dubai to Abu Dhabi Monthly Transfer",
-      price: "Private: AED 6500 | Sharing: AED 3500",
+      price: "Private: AED 6500 | Sharing: AED 3000",
       image: "images/dubai-to-abu-dhabi-monthly-pick-and-drop-service.avif?v=20260817",
       badges: ["Commute", "Private / Sharing"],
       description: "Looking for a reliable, stress-free daily commute between Dubai and Abu Dhabi?",
@@ -1361,7 +1472,7 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
       price: "AED 1200 / 10 Hours | AED 700 / 5 Hours",
       image: "images/toyota-coaster.avif?v=20260817",
       badges: ["Economy Bus", "22 Seater"],
-      description: "The reliable workhorse for medium group transportation.",
+      description: "The Toyota Coaster with chauffeur in Dubai is a practical passenger bus suited to families, tour groups, hotel guests and business teams.",
       features: ["22 Passenger Capacity", "Comprehensive Insurance & Petrol", "Salik Toll Gates", "Air Conditioned", "Professional Driver"],
       surcharge: "If Abu Dhabi or Other Emirates Then AED 250 Extra"
     },
@@ -1373,65 +1484,106 @@ src="https://www.facebook.com/tr?id=1452708760024322&ev=PageView&noscript=1"
       description: "Never worry about flight delays or airport queues. Our 24/7 airport transfer service features flight tracking.",
       features: ["24/7 Flight Monitoring", "Meet & Greet Inside Terminal", "Free Waiting Time for Delays", "Luggage Assistance", "Available Across DXB & DWC", "Entire Luxury Fleet Eligible"],
       surcharge: ""
+    },
+    "airport-option-1": {
+      title: "Toyota Fortuner",
+      price: "AED 700 / 10 Hours | AED 400 / 5 Hours",
+      image: "images/fortuner.avif",
+      badges: ["7 Seater", "SUV"],
+      description: "Enjoy ultimate comfort and road presence with our spacious Toyota Fortuner. This premium 7-seater SUV combines off-road capability with a luxurious cabin.",
+      features: ["VIP Luxury Transport", "Salik Toll Gates & Parking Covered", "Professional Driver", "Comprehensive Insurance & Petrol"],
+      surcharge: ""
+    },
+    "airport-option-2": {
+      title: "Toyota High Roof Van",
+      price: "AED 750 / 10 Hours | AED 450 / 5 Hours",
+      image: "images/toyota-high-roof-van.avif",
+      badges: ["14 Seater", "Economy Van"],
+      description: "Practical passenger minivan suited to families, tour groups, hotel guests and business teams.",
+      features: ["VIP Door-to-Door Transfer", "Professional Driver", "Bottled Water & Wi-Fi", "Economy Vehicle"],
+      surcharge: ""
+    },
+    "GMC Yukon Malala Edition": {
+      title: "GMC Yukon Malala Edition",
+      price: "AED 800 / Hour",
+      image: "images/gmc-yukon-malala-edition.avif",
+      badges: ["20 Seater", "Private Limousine"],
+      description: "Comfortable and spacious limousine offering modern amenities and smooth transfers.",
+      features: ["Express Pickup & Drop", "Transparent Rates", "Experienced Chauffeur", "24/7 Customer Support"],
+      surcharge: "If Abu Dhabi or Other Emirates Then AED 250 Extra"
+    },
+    "Private Yacht Tour": {
+      title: "Private Yacht Tour",
+      price: "AED 350 / Hour",
+      image: "images/private-yacht.avif",
+      badges: ["Private Yacht", "1 Hour"],
+      description: "Ride across Dubai Marina on a top-tier luxury yacht with experienced crew and captain.",
+      features: ["Luxury Private Yacht", "Professional Captain & Crew", "Sightseeing around Palm Jumeirah & Marina", "Music & Entertainment System"],
+      surcharge: ""
+    },
+    "Jet Car Experiance": {
+      title: "Jet Car Experience",
+      price: "AED 600 / 20 Mins",
+      image: "images/jet-car.avif",
+      badges: ["Water Adventure", "VIP Jet Car"],
+      description: "Experience the thrill of driving a luxury supercar right on top of the water in Jumeirah Bay.",
+      features: ["VIP Jet Car Drive", "Full Safety Equipment & Life Jackets", "Safety Briefing by Certified Instructor", "Panoramic Coastline Views"],
+      surcharge: ""
+    },
+    "water-adventure-3": {
+      title: "Jet Ski Experience",
+      price: "AED 250 / 20 Mins",
+      image: "images/jet-ski.avif?v=20260817",
+      badges: ["Water Adventure", "2 Seater"],
+      description: "High-speed Jet Ski ride across Jumeirah waters with views of Burj Al Arab & Dubai skyline.",
+      features: ["2-Seater High-Power Jet Ski", "Full Safety Briefing & Life Jackets", "Photoshoot & Video Stop", "Guided Water Route"],
+      surcharge: ""
     }
   };
 
   function openServiceDetail(serviceKey) {
-    const data = serviceData[serviceKey];
-    if (!data) return;
+    const item = serviceData[serviceKey];
+    if (!item) return;
 
-    // Populate fields
-    document.getElementById('detail-img').src = data.image;
-    document.getElementById('detail-img').alt = data.title;
-    document.getElementById('detail-title').textContent = data.title;
-    document.getElementById('detail-price').textContent = data.price;
-    document.getElementById('detail-desc').textContent = data.description;
+    document.getElementById('detail-title').innerText = item.title;
+    document.getElementById('detail-price').innerText = item.price;
+    document.getElementById('detail-img').src = item.image;
+    document.getElementById('detail-img').alt = item.title;
+    document.getElementById('detail-desc').innerText = item.description;
 
-    // Badges
-    const badgeContainer = document.getElementById('detail-badges');
-    badgeContainer.innerHTML = '';
-    data.badges.forEach(b => {
-      const div = document.createElement('div');
-      div.className = 'badge';
-      div.textContent = b;
-      badgeContainer.appendChild(div);
+    const badgesContainer = document.getElementById('detail-badges');
+    badgesContainer.innerHTML = '';
+    item.badges.forEach(badgeText => {
+      const b = document.createElement('div');
+      b.className = 'badge';
+      b.innerText = badgeText;
+      badgesContainer.appendChild(b);
     });
 
-    // Features List
-    const featList = document.getElementById('detail-features');
-    featList.innerHTML = '';
-    data.features.forEach(f => {
+    const featuresContainer = document.getElementById('detail-features');
+    featuresContainer.innerHTML = '';
+    item.features.forEach(feat => {
       const li = document.createElement('li');
-      li.textContent = f;
-      featList.appendChild(li);
+      li.innerText = feat;
+      featuresContainer.appendChild(li);
     });
 
-    // Surcharge
     const surchargeBox = document.getElementById('detail-surcharge');
-    if (data.surcharge) {
-      surchargeBox.textContent = data.surcharge;
+    if (item.surcharge) {
+      surchargeBox.innerText = item.surcharge;
       surchargeBox.style.display = 'block';
     } else {
       surchargeBox.style.display = 'none';
     }
 
-    // WhatsApp Button Action
     document.getElementById('detail-whatsapp-btn').onclick = function() {
-      openWhats(data.title);
+      openWhats(item.title);
     };
 
-    // Switch Views
     document.getElementById('main-content-view').style.display = 'none';
     document.getElementById('service-detail-view').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
-  function showMainView() {
-    document.getElementById('service-detail-view').style.display = 'none';
-    document.getElementById('main-content-view').style.display = 'block';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
 </script>
-
 </body>
 </html>
