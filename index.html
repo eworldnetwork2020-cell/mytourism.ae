@@ -1,6 +1,23 @@
 <!doctype html>
 <html lang="en-AE">
 <head>
+<!-- Event snippet for Contact us conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18383366037/UTjsCP3j0t8cEJXP771E',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <!doctype html>
 <html lang="en-AE">
 <head>
