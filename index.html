@@ -434,7 +434,7 @@ fbq('track', 'PageView');
   .iti--separate-dial-code #wa:focus { background: #fff; border-color: var(--accent); }
 
   /* Sections & Grid Layouts */
-  section { padding: 60px 0; border-bottom: 1px solid var(--border-color); }
+  section { padding: 60px 0; border-bottom: 1px solid var(--border-color); scroll-margin-top: 80px; }
   .section-header { margin-bottom: 32px; }
   .section-title { font-size: 28px; color: var(--primary); font-weight: 800; letter-spacing: -0.01em; margin-bottom: 8px; }
   .section-desc { color: var(--text-muted); font-size: 16px; max-width: 700px; }
@@ -565,7 +565,7 @@ fbq('track', 'PageView');
 
 <header>
   <div class="nav container">
-    <a href="#" class="brand" onclick="showMainView(); return false;">
+    <a href="#" class="brand" onclick="showMainView(); history.pushState(null, null, ' '); return false;">
       <img src="images/logo.avif?v=20260817" alt="MY Tourism Logo" class="logo" width="48" height="48" fetchpriority="high">
       <div>
         <div style="font-weight: 800; font-size: 16px;">MY Tourism</div>
@@ -574,12 +574,12 @@ fbq('track', 'PageView');
     </a>
     <nav>
       <ul>
-        <li><a href="#" onclick="showMainView(); return false;">Home</a></li>
-        <li><a href="#desert-safari" onclick="showMainView()">Desert Safari</a></li>
-        <li><a href="#city-tours" onclick="showMainView()">City Tours</a></li>
-        <li><a href="#fleet" onclick="showMainView()">Luxury Fleet</a></li>
-        <li><a href="#water-adventures" onclick="showMainView()">Water Adventures</a></li>
-        <li><a href="#faq" onclick="showMainView()">FAQ</a></li>
+        <li><a href="#" onclick="showMainView(); history.pushState(null, null, ' '); return false;">Home</a></li>
+        <li><a href="#Dubai-&-Abu-Dhabi-Desert-Safari-Packages" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Desert-Safari-Packages'); return false;">Desert Safari</a></li>
+        <li><a href="#Dubai-&-Abu-Dhabi-Guided-City-Tours" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Guided-City-Tours'); return false;">City Tours</a></li>
+        <li><a href="#fleet" onclick="navigateToSection('fleet'); return false;">Luxury Fleet</a></li>
+        <li><a href="#Water-Adventures" onclick="navigateToSection('Water-Adventures'); return false;">Water Adventures</a></li>
+        <li><a href="#faq" onclick="navigateToSection('faq'); return false;">FAQ</a></li>
         <li><a href="https://wa.me/971561402248" target="_blank" rel="noopener" class="cta">Contact</a></li>
       </ul>
     </nav>
@@ -629,7 +629,7 @@ fbq('track', 'PageView');
         <h1>Book Your Ride Now: Dubai Desert Safari, City Tours & Luxury Chauffeur Transfers</h1>
         <p class="lead">Book premium experiences across Dubai and the UAE. Choose VIP Desert Safaris with BBQ dinner & Quad Biking, full-day Dubai City Tours, or luxury chauffeur transfers in Lexus, Mercedes C-Class, and BMW 7 Series vehicles.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#fleet">Book Your Ride Now</a>
+          <a class="btn btn-primary" href="#fleet" onclick="navigateToSection('fleet'); return false;">Book Your Ride Now</a>
           <a class="btn btn-outline" href="https://wa.me/971561402248" target="_blank" rel="noopener">WhatsApp Quick Inquiry</a>
         </div>
         <div style="margin-top: 20px; color: #cbd5e1; font-size: 15px;"><strong>Call / WhatsApp:</strong> <a href="tel:+971561402248" style="color: var(--accent); font-weight: 800; text-decoration: none;">+971 561402248</a></div>
@@ -675,7 +675,7 @@ fbq('track', 'PageView');
   </div>
 
   <main class="container">
-    <section id="desert-safari">
+    <section id="Dubai-&-Abu-Dhabi-Desert-Safari-Packages">
       <div class="section-header">
         <h2 class="section-title">Dubai & Abu Dhabi Desert Safari Packages</h2>
         <p class="section-desc">Experience the high dunes across the UAE. Book your ride for our desert safari packages which include 4x4 dune bashing, camel riding, sandboarding, live entertainment shows, and an international BBQ buffet dinner.</p>
@@ -775,7 +775,7 @@ fbq('track', 'PageView');
     </section>
 
     <!-- CITY TOURS SECTION -->
-    <section id="city-tours">
+    <section id="Dubai-&-Abu-Dhabi-Guided-City-Tours">
       <div class="section-header">
         <h2 class="section-title">Dubai & Abu Dhabi Guided City Tours</h2>
         <p class="section-desc">Explore iconic landmarks across the UAE in private air-conditioned comfort with professional chauffeurs and customizable itineraries.</p>
@@ -1078,7 +1078,7 @@ fbq('track', 'PageView');
       </div>
     </section>
 
-    <section id="water-adventures">
+    <section id="Water-Adventures">
       <div class="section-header">
         <h2 class="section-title">Water Adventures</h2>
         <p class="section-desc">Experience thrilling aquatic activities and water sports across Dubai's coastlines.</p>
@@ -1213,12 +1213,12 @@ fbq('track', 'PageView');
     <div class="footer-col">
       <div class="footer-heading">Quick Links</div>
       <ul>
-        <li><a href="#home" onclick="showMainView()">&gt; Home</a></li>
-        <li><a href="#desert-safari" onclick="showMainView()">&gt; Desert Safari</a></li>
-        <li><a href="#city-tours" onclick="showMainView(); scrollToCard('abu-dhabi-tour');">&gt; Full Day Abu Dhabi Tour</a></li>
-        <li><a href="#fleet" onclick="showMainView()">&gt; Cars & Fleet</a></li>
-        <li><a href="#water-adventures" onclick="showMainView()">&gt; Water Adventures</a></li>
-        <li><a href="#faq" onclick="showMainView()">&gt; FAQ</a></li>
+        <li><a href="#" onclick="showMainView(); history.pushState(null, null, ' '); return false;">&gt; Home</a></li>
+        <li><a href="#Dubai-&-Abu-Dhabi-Desert-Safari-Packages" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Desert-Safari-Packages'); return false;">&gt; Desert Safari</a></li>
+        <li><a href="#Dubai-&-Abu-Dhabi-Guided-City-Tours" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Guided-City-Tours'); scrollToCard('abu-dhabi-tour'); return false;">&gt; Full Day Abu Dhabi Tour</a></li>
+        <li><a href="#fleet" onclick="navigateToSection('fleet'); return false;">&gt; Cars & Fleet</a></li>
+        <li><a href="#Water-Adventures" onclick="navigateToSection('Water-Adventures'); return false;">&gt; Water Adventures</a></li>
+        <li><a href="#faq" onclick="navigateToSection('faq'); return false;">&gt; FAQ</a></li>
         <li><a href="write-for-us.html" target="_blank" rel="noopener">&gt; Write for Us</a></li>
         <li><a href="https://wa.me/971561402248" target="_blank" rel="noopener">&gt; Contact Us</a></li>
       </ul>
@@ -1227,12 +1227,12 @@ fbq('track', 'PageView');
     <div class="footer-col">
       <div class="footer-heading">Our Services</div>
       <ul>
-        <li><a href="#desert-safari" onclick="showMainView()">&gt; Quad Biking & BBQ Safaris</a></li>
-        <li><a href="#city-tours" onclick="showMainView(); scrollToCard('abu-dhabi-tour');">&gt; Dubai & Abu Dhabi Full Day Tours</a></li>
-        <li><a href="#fleet" onclick="showMainView(); scrollToCard('airport-transfer');">&gt; Airport Chauffeur Transfers</a></li>
-        <li><a href="#fleet" onclick="showMainView()">&gt; Executive BMW & Mercedes Rides</a></li>
-        <li><a href="#fleet" onclick="showMainView(); scrollToCard('yutong-bus');">&gt; Group Vans & Bus Rentals</a></li>
-        <li><a href="#water-adventures" onclick="showMainView()">&gt; Luxury Yachts & Jet Ski</a></li>
+        <li><a href="#Dubai-&-Abu-Dhabi-Desert-Safari-Packages" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Desert-Safari-Packages'); return false;">&gt; Quad Biking & BBQ Safaris</a></li>
+        <li><a href="#Dubai-&-Abu-Dhabi-Guided-City-Tours" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Guided-City-Tours'); scrollToCard('abu-dhabi-tour'); return false;">&gt; Dubai & Abu Dhabi Full Day Tours</a></li>
+        <li><a href="#fleet" onclick="navigateToSection('fleet'); scrollToCard('airport-transfer'); return false;">&gt; Airport Chauffeur Transfers</a></li>
+        <li><a href="#fleet" onclick="navigateToSection('fleet'); return false;">&gt; Executive BMW & Mercedes Rides</a></li>
+        <li><a href="#fleet" onclick="navigateToSection('fleet'); scrollToCard('yutong-bus'); return false;">&gt; Group Vans & Bus Rentals</a></li>
+        <li><a href="#Water-Adventures" onclick="navigateToSection('Water-Adventures'); return false;">&gt; Luxury Yachts & Jet Ski</a></li>
       </ul>
     </div>
 
@@ -1283,6 +1283,14 @@ fbq('track', 'PageView');
       phoneInput.addEventListener("focus", initIti, { once: true });
       phoneInput.addEventListener("click", initIti, { once: true });
     }
+
+    // Handle direct URL hash landing (e.g. loading localhost:8000/#Dubai-&-Abu-Dhabi-Desert-Safari-Packages)
+    if (window.location.hash) {
+      const targetId = decodeURIComponent(window.location.hash.substring(1));
+      setTimeout(() => {
+        navigateToSection(targetId);
+      }, 100);
+    }
   });
 
   function openWhats(vehicleName) {
@@ -1299,7 +1307,11 @@ fbq('track', 'PageView');
     const when = document.getElementById('when').value;
     const what = document.getElementById('what').value;
 
-    const message = encodeURIComponent(`Book Your Ride Now / Trip Inquiry:\nService/Vehicle: ${what}\nPickup Location: ${loc}\nDate & Time: ${when}\nClient WhatsApp: ${fullUserWa}`);
+    const message = encodeURIComponent(`Book Your Ride Now / Trip Inquiry:
+Service/Vehicle: ${what}
+Pickup Location: ${loc}
+Date & Time: ${when}
+Client WhatsApp: ${fullUserWa}`);
     window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
   }
 
@@ -1315,6 +1327,46 @@ fbq('track', 'PageView');
     document.getElementById('main-content-view').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  function navigateToSection(sectionId) {
+    document.getElementById('service-detail-view').style.display = 'none';
+    document.getElementById('main-content-view').style.display = 'block';
+
+    history.pushState(null, null, '#' + sectionId);
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  // Dynamic Scroll Hash Observer
+  document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("section[id]");
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: "-20% 0px -60% 0px",
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.getAttribute("id");
+          if (sectionId && sectionId !== "home") {
+            history.replaceState(null, null, '#' + sectionId);
+          } else if (sectionId === "home") {
+            history.replaceState(null, null, ' ');
+          }
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
 
   /* --- SERVICE DETAIL DATABASE & SWITCHER LOGIC --- */
   const serviceData = {
