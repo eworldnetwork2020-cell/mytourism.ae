@@ -182,7 +182,7 @@ fbq('track', 'PageView');
           "itemOffered": {
             "@type": "Service",
             "name": "Desert Safari BBQ Dinner (Shared)",
-            "description": "Dune driving, camel riding, sandboarding, Henna painting, Tanoura show & international BBQ dinner."
+            "description": "Dune driving, camel riding, sandboarding, Henna painting, Tanoura show & international BBQ buffet dinner."
           },
           "price": "99",
           "priceCurrency": "AED"
@@ -191,20 +191,20 @@ fbq('track', 'PageView');
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Full Day Dubai City Tour",
+            "name": "Private Dubai City Tour",
             "description": "Guided tour covering Burj Khalifa, Dubai Mall, Atlantis The Palm, Dubai Frame, Gold Souk, and Dubai Marina."
           },
-          "price": "600",
+          "price": "300",
           "priceCurrency": "AED"
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Full Day Abu Dhabi City Tour",
+            "name": "Private Abu Dhabi City Tour",
             "description": "Grand Mosque, Heritage Village, Emirates Palace photo stop, Louvre Museum photo stop, and Ferrari World view."
           },
-          "price": "700",
+          "price": "450",
           "priceCurrency": "AED"
         },
         {
@@ -384,6 +384,18 @@ fbq('track', 'PageView');
   .btn-outline { border: 2px solid rgba(255, 255, 255, 0.8); color: #ffffff; background: transparent; }
   .btn-outline:hover { background: rgba(255, 255, 255, 0.1); border-color: #fff; }
 
+  /* WhatsApp Buttons Color (#42D93D) */
+  .whatsapp-btn, .whatsapp-float {
+    background: #42D93D !important;
+    border-color: #42D93D !important;
+    color: #ffffff !important;
+  }
+  .whatsapp-btn:hover, .whatsapp-float:hover {
+    background: #39c435 !important;
+    border-color: #39c435 !important;
+    color: #ffffff !important;
+  }
+
   /* Booking Sidebar */
   .hero-right {
     background: var(--card-bg);
@@ -499,7 +511,7 @@ fbq('track', 'PageView');
   .faq-question { font-weight: 800; font-size: 16px; color: var(--primary); margin-bottom: 8px; }
   .faq-answer { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 
-  /* WhatsApp Float Button */
+  /* WhatsApp Float Button with overflow hidden to clip any square corners perfectly */
   .whatsapp-float {
     position: fixed;
     bottom: 25px;
@@ -507,14 +519,15 @@ fbq('track', 'PageView');
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    overflow: hidden;
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 8px 24px rgba(66, 217, 61, 0.4);
     transition: transform 0.3s ease;
-    background: #25d366;
+    background: #42D93D;
   }
   .whatsapp-float:hover { transform: scale(1.1); }
   .whatsapp-icon { width: 36px; height: 36px; object-fit: contain; filter: brightness(0) invert(1); }
@@ -611,7 +624,7 @@ fbq('track', 'PageView');
       <div id="detail-surcharge" class="surcharge" style="display: none;"></div>
 
       <div style="display: flex; gap: 12px; margin-top: 24px;">
-        <button id="detail-whatsapp-btn" class="btn btn-primary" style="flex: 1; justify-content: center; background: #25D366; color: #fff;">Book via WhatsApp</button>
+        <button id="detail-whatsapp-btn" class="btn whatsapp-btn" style="flex: 1; justify-content: center;">Book via WhatsApp</button>
       </div>
     </div>
   </div>
@@ -630,7 +643,7 @@ fbq('track', 'PageView');
         <p class="lead">Book premium experiences across Dubai and the UAE. Choose VIP Desert Safaris with BBQ dinner & Quad Biking, full-day Dubai City Tours, or luxury chauffeur transfers in Lexus, Mercedes C-Class, and BMW 7 Series vehicles.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#fleet" onclick="navigateToSection('fleet'); return false;">Book Your Ride Now</a>
-          <a class="btn btn-outline" href="https://wa.me/971561402248" target="_blank" rel="noopener">WhatsApp Quick Inquiry</a>
+          <a class="btn whatsapp-btn" href="https://wa.me/971561402248" target="_blank" rel="noopener">WhatsApp Quick Inquiry</a>
         </div>
         <div style="margin-top: 20px; color: #cbd5e1; font-size: 15px;"><strong>Call / WhatsApp:</strong> <a href="tel:+971561402248" style="color: var(--accent); font-weight: 800; text-decoration: none;">+971 561402248</a></div>
       </div>
@@ -653,8 +666,8 @@ fbq('track', 'PageView');
             <option>Desert Safari (With Quad Bike)</option>
             <option>Desert Safari (BBQ Dinner)</option>
             <option>Abu Dhabi Desert Safari</option>
-            <option>Full Day Abu Dhabi City Tour</option>
-            <option>Dubai City Tour</option>
+            <option>Private Abu Dhabi City Tour</option>
+            <option>Private Dubai City Tour</option>
             <option>Lexus 300H Sedan</option>
             <option>Mercedes C-Class / S-Class</option>
             <option>BMW 7 Series</option>
@@ -667,7 +680,7 @@ fbq('track', 'PageView');
           
           <div style="display: flex; gap: 8px; margin-top: 12px;">
             <button class="btn btn-primary" type="submit" style="flex: 1; justify-content: center;">Book Now</button>
-            <a class="btn btn-outline" href="https://wa.me/971561402248" target="_blank" rel="noopener" style="color: #ffffff; border-color: #25D366; background: #25D366; padding: 14px 16px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">WhatsApp</a>
+            <a class="btn whatsapp-btn" href="https://wa.me/971561402248" target="_blank" rel="noopener" style="padding: 14px 16px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">WhatsApp</a>
           </div>
         </form>
       </aside>
@@ -693,7 +706,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('safari-quad')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Desert Safari With Quad Bike')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Desert Safari With Quad Bike')">WhatsApp</button>
           </div>
         </div>
 
@@ -708,7 +721,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('safari-private')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Private Desert Safari Trip')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Private Desert Safari Trip')">WhatsApp</button>
           </div>
         </div>
 
@@ -723,7 +736,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('safari-abudhabi')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Abu Dhabi Desert Safari')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Abu Dhabi Desert Safari')">WhatsApp</button>
           </div>
         </div>
 
@@ -738,7 +751,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('safari-shared')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Desert Safari Shared Trip')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Desert Safari Shared Trip')">WhatsApp</button>
           </div>
         </div>
 
@@ -753,7 +766,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('safari-morning')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Morning Desert Safari')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Morning Desert Safari')">WhatsApp</button>
           </div>
         </div>
 
@@ -768,7 +781,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('buggy-ride')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Dune Buggy Ride')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Dune Buggy Ride')">WhatsApp</button>
           </div>
         </div>
       </div>
@@ -784,33 +797,33 @@ fbq('track', 'PageView');
       <div class="grid">
         <div class="card">
           <div>
-            <img loading="lazy" src="images/dubai-city-tour.avif?v=20260817" alt="Full Day Dubai City Tour" width="400" height="250">
-            <div class="vehicle-name">Full Day Dubai City Tour</div>
+            <img loading="lazy" src="images/dubai-city-tour.avif?v=20260817" alt="Private Dubai City Tour" width="400" height="250">
+            <div class="vehicle-name">Private Dubai City Tour</div>
             <div class="badges"><div class="badge">Private Tour</div><div class="badge">Custom Itinerary</div></div>
             <div class="divider"></div>
-            <div class="meta-row"><div class="loc">📍 Dubai</div><div class="price"><small>AED 600 / 10 Hours</small>AED 350 / 5 Hours</div></div>
+            <div class="meta-row"><div class="loc">📍 Dubai</div><div class="price"><small>Starting Price : AED 300</small></div></div>
             <div class="includes">Explore Burj Khalifa, Dubai Mall, Atlantis The Palm, Dubai Frame, Gold Souk, and Dubai Marina with a dedicated driver.</div>
             <div class="surcharge">If Abu Dhabi or Other Emirates Then AED 100 Extra</div>
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('tour-dubai')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Full Day Dubai City Tour')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Private Dubai City Tour')">WhatsApp</button>
           </div>
         </div>
 
         <div class="card" id="abu-dhabi-tour">
           <div>
-            <img loading="lazy" src="images/abu-dhabi-city-tour.avif?v=20260817" alt="Full Day Abu Dhabi City Tour" width="400" height="250">
-            <div class="vehicle-name">Full Day Abu Dhabi City Tour</div>
+            <img loading="lazy" src="images/abu-dhabi-city-tour.avif?v=20260817" alt="Private Abu Dhabi City Tour" width="400" height="250">
+            <div class="vehicle-name">Private Abu Dhabi City Tour</div>
             <div class="badges"><div class="badge">Full Day Tour</div><div class="badge">Private Transfer</div></div>
             <div class="divider"></div>
-            <div class="meta-row"><div class="loc">📍 Abu Dhabi</div><div class="price"><small>AED 700 / 10 Hours</small></div></div>
+            <div class="meta-row"><div class="loc">📍 Abu Dhabi</div><div class="price"><small>Starting Price : AED 450</small></div></div>
             <div class="includes">Sheikh Zayed Grand Mosque, Heritage Village, Emirates Palace photo stop, Louvre Museum, and Ferrari World views.</div>
             <div class="surcharge">Includes Inter-Emirates Transfer from Dubai</div>
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('tour-abudhabi')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Full Day Abu Dhabi City Tour')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Private Abu Dhabi City Tour')">WhatsApp</button>
           </div>
         </div>
 
@@ -825,7 +838,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('monthly-transfer')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Monthly Transfer Dubai-AbuDhabi')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Monthly Transfer Dubai-AbuDhabi')">WhatsApp</button>
           </div>
         </div>
       </div>
@@ -850,7 +863,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('lexus-black')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Lexus 300H Black')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Lexus 300H Black')">WhatsApp</button>
           </div>
         </div>
 
@@ -866,7 +879,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('lexus-white')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Lexus 300H White')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Lexus 300H White')">WhatsApp</button>
           </div>
         </div>
 
@@ -882,7 +895,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('bmw-7')">View Details</button>
-            <button class="action-btn" onclick="openWhats('BMW 7 Series')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('BMW 7 Series')">WhatsApp</button>
           </div>
         </div>
 
@@ -898,7 +911,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('mercedes-s')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Mercedes Luxury Sedan')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Mercedes Luxury Sedan')">WhatsApp</button>
           </div>
         </div>
 
@@ -914,7 +927,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('gmc-yukon')">View Details</button>
-            <button class="action-btn" onclick="openWhats('GMC Yukon XL')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('GMC Yukon XL')">WhatsApp</button>
           </div>
         </div>
 
@@ -930,7 +943,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('mercedes-v')">View Details</button>
-            <button class="action-btn" onclick="openWhats('MERCEDES V CLASS VAN')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('MERCEDES V CLASS VAN')">WhatsApp</button>
           </div>
         </div>
 
@@ -946,7 +959,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('hyundai-h1')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Hyundai H1')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Hyundai H1')">WhatsApp</button>
           </div>
         </div>
 
@@ -962,7 +975,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('mercedes-sprinter')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Mercedes Sprinter')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Mercedes Sprinter')">WhatsApp</button>
           </div>
         </div>
 
@@ -978,7 +991,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('yutong-bus-card')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Yutong Bus 35 Seater')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Yutong Bus 35 Seater')">WhatsApp</button>
           </div>
         </div>
 
@@ -994,7 +1007,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('king-long-card')">View Details</button>
-            <button class="action-btn" onclick="openWhats('King Long 50 Seater')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('King Long 50 Seater')">WhatsApp</button>
           </div>
         </div>
 
@@ -1010,7 +1023,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('toyota-coaster')">View Details</button>
-            <button class="action-btn" onclick="openWhats('TOYOTA COASTER 22 Seater')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('TOYOTA COASTER 22 Seater')">WhatsApp</button>
           </div>
         </div>
 
@@ -1026,7 +1039,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('airport-option-2')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Toyota High Roof Van')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Toyota High Roof Van')">WhatsApp</button>
           </div>
         </div>
 
@@ -1042,7 +1055,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('airport-option-1')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Toyota Fortuner')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Toyota Fortuner')">WhatsApp</button>
           </div>
         </div>
 
@@ -1057,7 +1070,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('GMC Yukon Malala Edition')">View Details</button>
-            <button class="action-btn" onclick="openWhats('GMC Yukon Malala Edition')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('GMC Yukon Malala Edition')">WhatsApp</button>
           </div>
         </div>
 
@@ -1072,7 +1085,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('airport-service')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Airport Transfer Service')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Airport Transfer Service')">WhatsApp</button>
           </div>
         </div>
       </div>
@@ -1096,7 +1109,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('Private Yacht Tour')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Private Yacht Tour')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Private Yacht Tour')">WhatsApp</button>
           </div>
         </div>
 
@@ -1111,7 +1124,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('Jet Car Experiance')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Jet Car Experience')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Jet Car Experience')">WhatsApp</button>
           </div>
         </div>
 
@@ -1126,7 +1139,7 @@ fbq('track', 'PageView');
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('water-adventure-3')">View Details</button>
-            <button class="action-btn" onclick="openWhats('Jet Ski Experience')">WhatsApp</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Jet Ski Experience')">WhatsApp</button>
           </div>
         </div>
       </div>
@@ -1257,7 +1270,9 @@ fbq('track', 'PageView');
 </footer>
 
 <a href="https://wa.me/971561402248" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <img src="images/whatsapp.avif?v=20260817" alt="WhatsApp" class="whatsapp-icon" width="36" height="36">
+  <svg class="whatsapp-icon" viewBox="0 0 24 24" width="36" height="36" fill="#ffffff">
+    <path d="M17.472 14.382c-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.801 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.49 0 0.16 5.33 0.157 11.892c0 2.096.547 4.142 1.588 5.945L0.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.558 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
 </a>
 
 <script>
@@ -1425,8 +1440,8 @@ Client WhatsApp: ${fullUserWa}`);
       surcharge: ""
     },
     "tour-dubai": {
-      title: "Full Day Dubai City Tour",
-      price: "AED 600 (10 Hours) | AED 350 (5 Hours)",
+      title: "Private Dubai City Tour",
+      price: "Starting Price : AED 300",
       image: "images/dubai-city-tour.avif?v=20260817",
       badges: ["Private Tour", "Custom Itinerary"],
       description: "Discover the breathtaking contrasts of old and modern Dubai with our private city tour.",
@@ -1434,8 +1449,8 @@ Client WhatsApp: ${fullUserWa}`);
       surcharge: "If Abu Dhabi or Other Emirates Then AED 100 Extra"
     },
     "tour-abudhabi": {
-      title: "Full Day Abu Dhabi City Tour",
-      price: "AED 700 / 10 Hours",
+      title: "Private Abu Dhabi City Tour",
+      price: "Starting Price : AED 450",
       image: "images/abu-dhabi-city-tour.avif?v=20260817",
       badges: ["Full Day Tour", "Private Transfer"],
       description: "Explore the majestic capital of the UAE with our full-day private tour from Dubai.",
