@@ -191,10 +191,20 @@ fbq('track', 'PageView');
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Private Dubai City Tour",
+            "name": "Half Day Dubai City Tour",
             "description": "Guided tour covering Burj Khalifa, Dubai Mall, Atlantis The Palm, Dubai Frame, Gold Souk, and Dubai Marina."
           },
           "price": "300",
+          "priceCurrency": "AED"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full Day Dubai City Tour",
+            "description": "Comprehensive guided tour covering Old & New Dubai landmarks."
+          },
+          "price": "450",
           "priceCurrency": "AED"
         },
         {
@@ -206,14 +216,6 @@ fbq('track', 'PageView');
           },
           "price": "450",
           "priceCurrency": "AED"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Luxury Chauffeur & Monthly Car Lift",
-            "description": "Executive private transfers, monthly car lifts, and inter-emirates chauffeur services across Dubai, Abu Dhabi, and Sharjah."
-          }
         }
       ]
     }
@@ -666,8 +668,9 @@ fbq('track', 'PageView');
             <option>Desert Safari (With Quad Bike)</option>
             <option>Desert Safari (BBQ Dinner)</option>
             <option>Abu Dhabi Desert Safari</option>
+            <option>Half Day Dubai City Tour</option>
+            <option>Full Day Dubai City Tour</option>
             <option>Private Abu Dhabi City Tour</option>
-            <option>Private Dubai City Tour</option>
             <option>Lexus 300H Sedan</option>
             <option>Mercedes C-Class / S-Class</option>
             <option>BMW 7 Series</option>
@@ -795,50 +798,54 @@ fbq('track', 'PageView');
       </div>
 
       <div class="grid">
+        <!-- 1. Half Day Dubai City Tour -->
         <div class="card">
           <div>
-            <img loading="lazy" src="images/dubai-city-tour.avif?v=20260817" alt="Private Dubai City Tour" width="400" height="250">
-            <div class="vehicle-name">Private Dubai City Tour</div>
-            <div class="badges"><div class="badge">Private Tour</div><div class="badge">Custom Itinerary</div></div>
+            <img loading="lazy" src="images/half-day-dubai-city-tour.avif" alt="Half Day Dubai City Tour" width="400" height="250">
+            <div class="vehicle-name">Half Day Dubai City Tour</div>
+            <div class="badges"><div class="badge">Half Day Tour</div><div class="badge">Custom Itinerary</div></div>
             <div class="divider"></div>
-            <div class="meta-row"><div class="loc">📍 Dubai</div><div class="price"><small>Starting Price : AED 300</small></div></div>
+            <div class="meta-row"><div class="loc">📍 Dubai</div><div class="price"><small>Starting Price : AED 250 To 350</small></div></div>
             <div class="includes">Explore Burj Khalifa, Dubai Mall, Atlantis The Palm, Dubai Frame, Gold Souk, and Dubai Marina with a dedicated driver.</div>
             <div class="surcharge">If Abu Dhabi or Other Emirates Then AED 100 Extra</div>
           </div>
           <div class="card-actions">
-            <button class="action-btn detail-btn" onclick="openServiceDetail('tour-dubai')">View Details</button>
-            <button class="action-btn whatsapp-btn" onclick="openWhats('Private Dubai City Tour')">WhatsApp</button>
+            <button class="action-btn detail-btn" onclick="openServiceDetail('tour-dubai-half')">View Details</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Half Day Dubai City Tour')">WhatsApp</button>
           </div>
         </div>
 
+        <!-- 2. Full Day Dubai City Tour -->
+        <div class="card" id="full-day-dubai-tour">
+          <div>
+            <img loading="lazy" src="images/full-day-dubai-city-tour.avif" alt="Full Day Dubai City Tour" width="400" height="250">
+            <div class="vehicle-name">Full Day Dubai City Tour</div>
+            <div class="badges"><div class="badge">Full Day Tour</div><div class="badge">Private Transfer</div></div>
+            <div class="divider"></div> 
+            <div class="meta-row"><div class="loc">📍 Dubai</div><div class="price"><small>Starting Price : AED 400 To 550</small></div></div>
+            <div class="includes">Complete full-day guided tour covering Old & New Dubai: Burj Khalifa, Dubai Mall, Palm Jumeirah, Dubai Marina, Frame, and Gold Souk.</div>
+            <div class="surcharge">If Abu Dhabi or Other Emirates Then AED 100 Extra</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn detail-btn" onclick="openServiceDetail('tour-dubai-full')">View Details</button>
+            <button class="action-btn whatsapp-btn" onclick="openWhats('Full Day Dubai City Tour')">WhatsApp</button>
+          </div>
+        </div>
+
+        <!-- 3. Private Abu Dhabi City Tour -->
         <div class="card" id="abu-dhabi-tour">
           <div>
-            <img loading="lazy" src="images/abu-dhabi-city-tour.avif?v=20260817" alt="Private Abu Dhabi City Tour" width="400" height="250">
+            <img loading="lazy" src="images/abu-dhabi-city-tour.avif" alt="Private Abu Dhabi City Tour" width="400" height="250">
             <div class="vehicle-name">Private Abu Dhabi City Tour</div>
             <div class="badges"><div class="badge">Full Day Tour</div><div class="badge">Private Transfer</div></div>
             <div class="divider"></div>
-            <div class="meta-row"><div class="loc">📍 Abu Dhabi</div><div class="price"><small>Starting Price : AED 450</small></div></div>
+            <div class="meta-row"><div class="loc">📍 Abu Dhabi</div><div class="price"><small>Starting Price : AED 450 To 600</small></div></div>
             <div class="includes">Sheikh Zayed Grand Mosque, Heritage Village, Emirates Palace photo stop, Louvre Museum, and Ferrari World views.</div>
             <div class="surcharge">Includes Inter-Emirates Transfer from Dubai</div>
           </div>
           <div class="card-actions">
             <button class="action-btn detail-btn" onclick="openServiceDetail('tour-abudhabi')">View Details</button>
             <button class="action-btn whatsapp-btn" onclick="openWhats('Private Abu Dhabi City Tour')">WhatsApp</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <div>
-            <img loading="lazy" src="images/dubai-to-abu-dhabi-monthly-pick-and-drop-service.avif?v=20260817" alt="Dubai to Abu Dhabi Monthly Transfer" width="400" height="250">
-            <div class="vehicle-name">Dubai to Abu Dhabi Monthly Transfer</div>
-            <div class="badges"><div class="badge">Commute</div><div class="badge">Private / Sharing</div></div>
-            <div class="divider"></div>
-            <div class="meta-row"><div class="loc">📍 Inter-Emirates</div><div class="price"><small>Private: AED 6500</small>Sharing: AED 3000</div></div>
-            <div class="includes">Daily executive pick and drop service for working professionals between Dubai and Abu Dhabi. Fuel & Salik included.</div>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn detail-btn" onclick="openServiceDetail('monthly-transfer')">View Details</button>
-            <button class="action-btn whatsapp-btn" onclick="openWhats('Monthly Transfer Dubai-AbuDhabi')">WhatsApp</button>
           </div>
         </div>
       </div>
@@ -1228,11 +1235,10 @@ fbq('track', 'PageView');
       <ul>
         <li><a href="#" onclick="showMainView(); history.pushState(null, null, ' '); return false;">&gt; Home</a></li>
         <li><a href="#Dubai-&-Abu-Dhabi-Desert-Safari-Packages" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Desert-Safari-Packages'); return false;">&gt; Desert Safari</a></li>
-        <li><a href="#Dubai-&-Abu-Dhabi-Guided-City-Tours" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Guided-City-Tours'); scrollToCard('abu-dhabi-tour'); return false;">&gt; Full Day Abu Dhabi Tour</a></li>
+        <li><a href="#Dubai-&-Abu-Dhabi-Guided-City-Tours" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Guided-City-Tours'); scrollToCard('abu-dhabi-tour'); return false;">&gt; Private Abu Dhabi Tour</a></li>
         <li><a href="#fleet" onclick="navigateToSection('fleet'); return false;">&gt; Cars & Fleet</a></li>
         <li><a href="#Water-Adventures" onclick="navigateToSection('Water-Adventures'); return false;">&gt; Water Adventures</a></li>
         <li><a href="#faq" onclick="navigateToSection('faq'); return false;">&gt; FAQ</a></li>
-        <li><a href="write-for-us.html" target="_blank" rel="noopener">&gt; Write for Us</a></li>
         <li><a href="https://wa.me/971561402248" target="_blank" rel="noopener">&gt; Contact Us</a></li>
       </ul>
     </div>
@@ -1241,7 +1247,7 @@ fbq('track', 'PageView');
       <div class="footer-heading">Our Services</div>
       <ul>
         <li><a href="#Dubai-&-Abu-Dhabi-Desert-Safari-Packages" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Desert-Safari-Packages'); return false;">&gt; Quad Biking & BBQ Safaris</a></li>
-        <li><a href="#Dubai-&-Abu-Dhabi-Guided-City-Tours" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Guided-City-Tours'); scrollToCard('abu-dhabi-tour'); return false;">&gt; Dubai & Abu Dhabi Full Day Tours</a></li>
+        <li><a href="#Dubai-&-Abu-Dhabi-Guided-City-Tours" onclick="navigateToSection('Dubai-&-Abu-Dhabi-Guided-City-Tours'); scrollToCard('full-day-dubai-tour'); return false;">&gt; Dubai Half & Full Day Tours</a></li>
         <li><a href="#fleet" onclick="navigateToSection('fleet'); scrollToCard('airport-transfer'); return false;">&gt; Airport Chauffeur Transfers</a></li>
         <li><a href="#fleet" onclick="navigateToSection('fleet'); return false;">&gt; Executive BMW & Mercedes Rides</a></li>
         <li><a href="#fleet" onclick="navigateToSection('fleet'); scrollToCard('yutong-bus'); return false;">&gt; Group Vans & Bus Rentals</a></li>
@@ -1439,32 +1445,32 @@ Client WhatsApp: ${fullUserWa}`);
       features: ["30 Minutes Self-Drive Dune Buggy Ride", "Off-Road Safety Equipment & Helmet", "Guided Dune Tour", "Sandboarding Included", "Hotel Pickup & Drop-off Options", "Short Camel Ride & Water Included"],
       surcharge: ""
     },
-    "tour-dubai": {
-      title: "Private Dubai City Tour",
-      price: "Starting Price : AED 300",
-      image: "images/dubai-city-tour.avif?v=20260817",
-      badges: ["Private Tour", "Custom Itinerary"],
-      description: "Discover the breathtaking contrasts of old and modern Dubai with our private city tour.",
+    "tour-dubai-half": {
+      title: "Half Day Dubai City Tour",
+      price: "Starting Price : AED 250 To 350",
+      image: "images/half-day-dubai-city-tour.avif",
+      badges: ["Half Day Tour", "Custom Itinerary"],
+      description: "Discover the highlights of old and modern Dubai with our half-day private city tour.",
       features: ["Burj Khalifa & Dubai Mall Photo Stop", "Atlantis The Palm & Marina Views", "Dubai Frame & Museum Visit", "Gold & Spice Souks Exploration", "Professional Chauffeur & Clean Vehicle", "Customized Sightseeing Itinerary"],
+      surcharge: "If Abu Dhabi or Other Emirates Then AED 100 Extra"
+    },
+    "tour-dubai-full": {
+      title: "Full Day Dubai City Tour",
+      price: "Starting Price : AED 400 to 550",
+      image: "images/full-day-dubai-city-tour.avif",
+      badges: ["Full Day Tour", "Private Transfer"],
+      description: "Experience a Private Dubai City Tour offering up to 8 hours of sightseeing in an air-conditioned 7-seater vehicle with a professional English-speaking driver, inclusive of all fuel, parking, and toll charges. Featuring a Customized Sightseeing Itinerary, the tour begins with pickup from your hotel or residence in Dubai and includes photo stops at Al Seef Waterfront, the Gold & Spice Souks, Dubai Frame, Museum of the Future, Jumeirah Mosque, Kite Beach, and Atlantis The Palm. Along the way, enjoy a visit to the Islamic Art Museum, a drive past the Burj Al Arab, optional rides on a traditional Abra boat and the Palm Jumeirah Monorail, and the Fountain Show at Dubai Mall before a convenient drop-off at your desired location.",
+      features: ["Burj Khalifa & Downtown Dubai", "Palm Jumeirah & Atlantis Photo Stop", "Dubai Marina & JBR Walk", "Dubai Frame & Museum of the Future Stop", "Old Dubai, Creek & Gold/Spice Souks", "Private Chauffeur & Fuel Included" , "Customized Sightseeing Itinerary"],
       surcharge: "If Abu Dhabi or Other Emirates Then AED 100 Extra"
     },
     "tour-abudhabi": {
       title: "Private Abu Dhabi City Tour",
-      price: "Starting Price : AED 450",
-      image: "images/abu-dhabi-city-tour.avif?v=20260817",
+      price: "Starting Price : AED 450 To 600",
+      image: "images/abu-dhabi-city-tour.avif",
       badges: ["Full Day Tour", "Private Transfer"],
-      description: "Explore the majestic capital of the UAE with our full-day private tour from Dubai.",
-      features: ["Sheikh Zayed Grand Mosque Visit", "Emirates Palace Photo Stop", "Heritage Village Cultural Tour", "Louvre Museum Exterior View", "Ferrari World Yas Island Stop", "Private Chauffeur & Fuel Included"],
+      description: "Experience a Private Abu Dhabi Tour offering up to 10 hours of sightseeing in an air-conditioned 7-seater vehicle with a professional English-speaking driver, inclusive of all fuel, parking, and toll charges. Featuring a Customized Sightseeing Itinerary, the journey begins with pickup from your home or hotel and a drive via Sheikh Zayed Road to Abu Dhabi, where you will enjoy a 1-hour and 30-minute stop at the Sheikh Zayed Mosque. The tour continues with visits to the Emirates Palace Hotel, Heritage Village, Islamic Art Museum, Carpet Market, and Dates Market, alongside photo stops at Sheikh's Palace, the Abu Dhabi Corniche, and Ferrari World (tickets not included). You will also take a scenic drive through Yas Island and have the option to visit the BAPS Temple before a convenient drop-off at your desired location.",
+      features: ["Sheikh Zayed Grand Mosque Visit", "Emirates Palace Photo Stop", "Heritage Village Cultural Tour", "Louvre Museum Exterior View", "Ferrari World Yas Island Stop", "Private Chauffeur & Fuel Included" , "Customized Sightseeing Itinerary"],
       surcharge: "Includes Inter-Emirates Transfer from Dubai"
-    },
-    "monthly-transfer": {
-      title: "Dubai to Abu Dhabi Monthly Transfer",
-      price: "Private: AED 6500 | Sharing: AED 3000",
-      image: "images/dubai-to-abu-dhabi-monthly-pick-and-drop-service.avif?v=20260817",
-      badges: ["Commute", "Private / Sharing"],
-      description: "Looking for a reliable, stress-free daily commute between Dubai and Abu Dhabi?",
-      features: ["Daily Morning & Evening Commute", "Punctual & Experienced Driver", "Petrol, Tolls & Salik Included", "Comfortable Seating Options", "Flexible Scheduling", "Private & Shared Plans Available"],
-      surcharge: ""
     },
     "lexus-black": {
       title: "Lexus 300H — Black",
